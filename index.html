@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wedding Invitation</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!-- Bootsrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- Font Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&display=swap" rel="stylesheet">
+
+  <!--Hitung mundur dengan JavaScript (simplyCountdownJs)-->
+  <link rel="stylesheet" href="Hitung Mundur/simplyCountdown.theme.default.css" />
+  <script src="Hitung Mundur/simplyCountdown.min.js"></script>
+
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Halaman Awal Mulai-->
+  <div id="landing-page">
+    <section id="hero" class="hero w-100 h-100 p-3 mx-auto text=center d-flex
+  justify-content-center align-items-center ">
+      <main>
+        <img src="img/top.png" alt="1"> </br> </br>
+        <h5><i>You Are Invited to </br></h5>
+        <h2>The Wedding Of</i></h2>
+        <h1>Louis & Olivia</h1>
+        <p><i>Akan Dilangsungkan Dalam:</i></p>
+        <div class="simply-countdown"></div>
+        <button id="open-invitation" class="btn btn-lg">Buka Undangan</button> </br> </br>
+        <img src="img/bottom.png" alt="2">
+      </main>
+    </section>
+  </div>
+  <!-- Halaman Awal Selesai-->
+
+  <!-- Halaman Utama Mulai-->
+  <div id="invitation-content" style="display: none;">
+    <!-- Navbar Mulai -->
+    <nav class="navbar navbar-expand-md fixed-top mynavbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home">Louis & Olivia</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Louis & Olivia</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">HOME</a>
+              <a class="nav-link" href="#info">INFO</a>
+              <a class="nav-link" href="#galeri">GALERI</a>
+              <a class="nav-link" href="#konfirmasi">KONFIRMASI</a>
+              <a class="nav-link" href="#pesan">PESAN</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar Selesai -->
+
+    <!-- Home Mulai -->
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h4>Pasangan Pengantin</h4>
+            <p>Tanpa Mengurangi Rasa Hormat, Kami Bermaksud Mengundang Bapak/Ibu/Saudara/I Untuk Menghadiri Acara
+              Pernikahan Kami :</p>
+          </div>
+
+          <div class="row couple">
+            <div class="col-lg-6">
+              <div class="row justify-content-center">
+                <div class="col-4">
+                  <img src="img/cowok.jpg" alt="pria" class="img-responsive rounded-circle">
+                </div>
+                <div class="row text-center">
+                  <h2>Louis Shanjaya</h2>
+                  <p>Putra dari<br>Bpk.Lorem <br>&amp<br>Ibu.Ipsum</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row justify-content-center">
+                <div class="col-4">
+                  <img src="img/cewek.jpg" alt="pria" class="img-responsive rounded-circle">
+                </div>
+                <div class="row text-center">
+                  <h2>Olivia Puspita Sari</h2>
+                  <p>Putri dari<br>Bpk.Lorem <br>&amp<br>Ibu.Ipsum</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Home Selesai -->
+
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Save The Date</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-5 col-10">
+            <div class="card text-center mb-5">
+              <div class="card-header">Akad Nikah</div>
+              <div class="card-body">
+                <i class="bi bi-clock d-block"></i>
+                <span>08.00 - 10.00</span>
+                <hr>
+                <i class="bi bi-calendar3 d-block"></i>
+                <span>Minggu, 28 Juli 2022</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-10">
+            <div class="card text-center">
+              <div class="card-header">Resepsi</div>
+              <div class="card-body">
+                <i class="bi bi-clock d-block"></i>
+                <span>11.00 - Selesai</span>
+                <hr>
+                <i class="bi bi-calendar3 d-block"></i>
+                <span>Minggu, 28 Juli 2024</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <p class="alamat">Alamat: Gedung 7 Amikom <br> Jalan in aja dulu,,Sleman, Yogyakarta</p>
+            <a href="https://maps.app.goo.gl/RFTPHGL1Phz1qjrW9" target="_blank"
+              class="btn btn-bd-primary btn-sm my-3">Klik
+              untuk membuka peta</a>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col text-center">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.08053980010936!2d110.4086732677824!3d-7.7591820116936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59e1ba0689fb%3A0xf7522b97c83bd0f9!2sUniversitas%20amikom%20Yogyakarta!5e0!3m2!1sid!2sid!4v1719296095344!5m2!1sid!2sid"
+              width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p class="description">Simpan Petunjuk Jalan Agar Tidak Salah Tujuan</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Halaman Utama Akhir-->
+
+    <!-- Bootstrap Javacript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+
+    <!--JavaScript untuk Hitung Mundur-->
+    <script>
+      simplyCountdown('.simply-countdown', {
+        year: 2024, // required
+        month: 7, // required
+        day: 28, // required
+        hours: 8, // Default is 0 [0-23] integer
+        words: { //words displayed into the countdown
+          days: { singular: 'hari', plural: 'hari' },
+          hours: { singular: 'jam', plural: 'jam' },
+          minutes: { singular: 'menit', plural: 'menit' },
+          seconds: { singular: 'detik', plural: 'detik' }
+        },
+      });
+    </script>
+    <!-- Javascript Untuk Menyembunyikan Halaman Utama -->
+    <script>document.getElementById('open-invitation').addEventListener('click', function () {
+        document.getElementById('landing-page').style.display = 'none'; // Sembunyikan halaman awal
+        document.getElementById('invitation-content').style.display = 'block'; // Tampilkan halaman undangan
+      });
+    </script>
+  </div>
+
+</body>
+
+</html>
